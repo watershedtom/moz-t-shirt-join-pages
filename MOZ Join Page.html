@@ -1,14 +1,10 @@
 <!DOCTYPE HTML>
-<html class="" lang="en">
+<!--[if lt IE 7]>              <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7]>                 <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8]>                 <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>                <html lang="en" class="ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en">         <!--<![endif]-->
 <head>
-	<style type="text/css"></style>
-	<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
-	<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
-	<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
-	<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
-	<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
-	<!--[if (gt IE 9)|!(IE)]><!-->
-	<!--<![endif]-->
 	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 	<meta charset="utf-8">
 	<title>Join Mozilla  |  Protect The Web</title>
@@ -33,6 +29,10 @@
 		body #footer-in
 		{
 			max-width: 100%;  /* for some reason footer-in is 23000 px wide, causing a horiz scroll bar on IE */
+		}
+		body #footer-in .five-col
+		{
+			width: 176px;
 		}
 		body
 		{
@@ -369,7 +369,8 @@
 						<input name="cc_number_ack" value="" type="hidden">
 						<input name="ach_account_number_ack" value="" type="hidden">
 						<input name="signup_optin" value="1" type="hidden">
-						<input name="amount" value="30" type="hidden">
+						<input name="amount" id="wsdonationamount" value="30" type="hidden">
+						<input name="amount_other" id="wsamount_other" value="" type="hidden">
 						<input name="ach_routing_number" value="" type="hidden">
 						<input name="ach_account_number" value="" type="hidden">
 						<input name="ach_account_name" value="" type="hidden">
@@ -386,7 +387,7 @@
 						<input id="wsaddr1" name="addr1" type="text" value="Street" class="text double">
 						<input id="wsaddr2" name="addr2" type="text" value="Street 2 (apt, ste, etc)" class="text double">
 						<input id="wscity" name="city" type="text" value="City" class="text colone">
-						<!-- My State Picker (BSD only requires state for U.S. and Canada) -->
+						<!-- Nice State Picker (BSD only requires state for U.S. and Canada) -->
 						<select id="wsstate_cd" name="state_cd" class="select coltwo">
 							<option selected="selected" value="">State/Province</option>
 							<option value="">None</option>
@@ -590,7 +591,10 @@
 								document.getElementById("wscustom1_size").disabled = true;
 								
 								if (document.getElementById("wscustom_amount").value != originalPlaceholder.wscustom_amount)
-									document.getElementById("wsamount").value = parseInt(document.getElementById("wsamount").value, 10) + document.getElementById("wscustom_amount").value;
+								{
+									document.getElementById("wsdonationamount").value = "other";
+									document.getElementById("wsamount_other").value = 30 + parseFloat(document.getElementById("wscustom_amount").value);
+								}
 								
 								document.getElementById("wscustom_amount").disabled = true;
 								

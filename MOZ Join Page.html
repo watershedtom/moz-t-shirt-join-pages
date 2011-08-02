@@ -1,0 +1,1168 @@
+<!DOCTYPE HTML>
+<html class="" lang="en">
+<head>
+	<style type="text/css"></style>
+	<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+	<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Join Mozilla  |  Protect The Web</title>
+	<!-- Empty conditional comment hack
+ 		Prevents load stacking in IE8
+ 		See http://www.phpied.com/conditional-comments-block-downloads/ -->
+	<!--[if IE]><![endif]-->
+	<!-- Chrome Frame for browsers that support it -->
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=980">
+	<meta name="WT.si_n" content="Join Mozilla English Signup">
+	<meta name="WT.si_x" content="1">
+	<link rel="shortcut icon" type="image/ico" href="https://donate.mozilla.org/page/smartproxy/BSD_CApMXA8IBxoKQVc/AwRAXAALCBoMUF8">
+	<link rel="stylesheet" href="webassets/main.css" type="text/css" media="screen">
+	<script type="text/javascript" src="webassets/modernizr.js"></script>
+	<link rel="canonical" href="https://donate.mozilla.org/page/contribute/protect-the-web">
+	<link rel="stylesheet" href="webassets/display_page.css" type="text/css">
+	<link rel="stylesheet" href="webassets/jquery_ui_reset.css" type="text/css">
+	
+	<style>
+		
+		body #footer-in
+		{
+			max-width: 100%;  /* for some reason footer-in is 23000 px wide, causing a horiz scroll bar on IE */
+		}
+		body
+		{
+			min-width: 980px;  /* otherwise gray top-border won't be present when user scrolls right if window is too narrow */
+			background-image: url(webassets/moz-join-repeatingbg.gif);
+		}
+		body #header
+		{
+			margin-bottom: 20px;
+			z-index: 10;
+		}
+		#wsactwrap
+		{
+			min-width: 980px;
+			padding-bottom: 180px;
+			background-image: url(webassets/moz-join-peoplebg.gif);
+			background-repeat: no-repeat;
+			background-position: bottom center;
+		}
+		#wsact
+		{
+			width: 980px;
+			margin: auto;
+			font-size: 16px;
+			line-height: 20px;
+			color: #484848;
+		}
+		#wsact h1
+		{
+			width: 961px;
+			margin: 0px 0px 17px 0px;
+			padding: 0px 0px 17px 0px;
+			font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
+			font-size: 78px;
+			line-height: 78px;
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #484848;
+			background-image: url(webassets/moz-join-dotted.png);
+			background-position: left bottom;
+			background-repeat: repeat-x;
+		}
+		.wsshirts
+		{
+			float: left;
+			width: 351px;
+			margin-right: 22px;
+			background-image: url(webassets/moz-join-tshirts.png);
+			background-repeat: no-repeat;
+			background-position: 0px 110px;
+			height: 560px;
+		}
+		.wsform
+		{
+			float: left;
+			width: 594px;
+			z-index: 0;
+		}
+		#wsniceform #wsamount
+		{
+			padding-bottom: 16px;
+		}
+		#wsniceform .text, #wsniceform .select
+		{
+			background-color: #f5fafe;
+			border-color: #c3d5e3;
+			height: auto;  /* for IE */
+			border: expression("1px solid ActiveCaption"); /* for IE7 and earlier */
+			margin: 0px 0px 10px 0px;
+		}
+		#wsniceform .text
+		{
+			padding: 4px 7px 4px 7px;
+			padding: expression("4px 5px 0px 5px"); /* for IE7 and earlier */
+			height: 16px;
+		}
+		#wsniceform .colone, #wsniceform .coltwo, #wsniceform .double
+		{
+			display: block;
+			float: left;
+		}
+		#wsniceform div.colone
+		{
+			width: 284px;
+		}
+		#wsniceform div.coltwo
+		{
+			width: 304px;
+			margin-left: 0px;
+		}
+		#wsniceform .colone strong, #wsniceform .coltwo strong
+		{
+			display: block;
+			padding-top: 10px;
+			padding-bottom: 14px;
+		}
+		#wsniceform .colone strong span, #wsniceform .coltwo strong span
+		{
+			font-weight: normal;
+			font-style: italic;
+		}
+		#wsniceform .text.colone, #wsniceform .text.coltwo
+		{
+			width: 268px;
+			width: expression("272px"); /* for IE7 and earlier */
+		}
+		#wsniceform .coltwo, #wsniceform .coltwo strong
+		{
+			margin-left: 21px;
+		}
+		#wsniceform .double
+		{
+			width: 573px;
+			width: expression("577px"); /* for IE7 and earlier */
+		}
+		#wsniceform .select
+		{
+			padding: 3px 4px 3px 4px;
+			height: 28px;  /* IE will ignore */
+			width: 284px;
+		}
+		#wsniceform .radio
+		{
+			display: block;
+			float: left;
+			height: 28px;
+			margin: 3px 20px 7px 2px;
+		}
+		#wsniceform label#wscc_pp_label
+		{
+			margin-right: 0px;
+		}
+		#wsniceform .checkbox
+		{
+			display: block;
+			float: left;
+			height: 28px;
+			margin: 3px 0px 7px 3px;
+			font-size: 14px;
+		}
+		#wsniceform #wslegal_confirm_checkbox
+		{
+			margin-left: 24px;
+		}
+		#wsniceform .radio input, #wsniceform .checkbox input
+		{
+			display: inline-block;
+			margin-right: 7px;
+			margin-right: expression("3px");
+		}
+		#wsniceform a
+		{
+			text-decoration: underline;
+		}
+		#wsniceform small
+		{
+			display: block;
+			font-size: 12px;
+			line-height: 15px;
+		}
+		#wsniceform #submitter
+		{
+			background-image: url(webassets/moz-join-order.png);
+			background-color: transparent;
+			width: 227px;
+			height: 68px;
+			border: 0px;
+			margin: 26px 0px 0px 50px;
+			display: block;
+			cursor: pointer;
+			font-size: 1px;  /* Hides button text in Firefox 3.0 */
+			font-size: 0px;  /* Hides button text in Firefox 3.5, Old Safari */
+			line-height: 200px;  /* Hides button text in IE, Safari, Chrome */
+			overflow: hidden;
+		}
+		#wssmallprint
+		{
+			font-size: 12px;
+			line-height: 15px;
+			padding-top: 15px;
+			padding-bottom: 20px;
+		}
+		.clearall
+		{
+			clear: both;
+		}
+		
+		/* All of these will only be relevant to users with js disabled: */
+		.wsform div #contribution
+		{
+			display: none;
+		}
+		.wsform form#contribution, .wsform form#contribution table, .wsform form#contribution td.contribcolumn, .wsform form#contribution .nested_table td
+		{
+			margin: 0px;
+			width: 100%;
+		}
+		.wsform form#contribution .contribcolumn, .wsform form#contribution .contribcolumn td
+		{
+			padding-top: 0px;
+		}
+		.wsform form#contribution .contribcolumn td
+		{
+			font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
+			font-size: 30px;
+			line-height: 30px;
+			color: #484848;
+			text-transform: uppercase;
+		}
+		.wsform form#contribution .contribcolumn td td
+		{
+			text-transform: none;
+		}
+		.wsform form#contribution label, .wsform form#contribution label span, .wsform form#contribution a
+		{
+			font-size: 16px;
+			font-family: georgia, "times new roman", serif;
+			color: #484848;
+		}
+		.wsform form#contribution td.contribbutton
+		{
+			padding-top: 10px;
+		}
+		.wsform .bsd-contribForm-belowContent
+		{
+			margin-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 0px;
+			font-size: 11px;
+			font-style: italic;
+		}
+		
+	</style>
+</head>
+<body class="page-index"> 
+	<noscript>
+		<style>
+			body .wsform div #contribution
+			{
+				display: block;
+			}
+			.wsform #wsniceform
+			{
+				display: none;
+			}
+		</style>
+	</noscript>
+	<div id="wsact1" class="act"> 
+		<header id="header">
+			<h1><a href="http://mozilla.com/firefox">Mozilla Firefox</a></h1> 
+			<a href="http://www.mozilla.org/" class="mozilla">Mozilla</a> 
+			<nav id="nav-main" role="navigation">
+				<ul role="menubar">
+					<li id="nav-main-features" class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="http://mozilla.com/firefox/features/">Desktop</a> 
+						<ul id="nav-main-features-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/firefox/features/">Features</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/security/">Security</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/performance/">Performance</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/customize/">Customization</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/technology/">Technology</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/video/">Videos</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/central/">Tour</a></li> 
+							<li class="last"><a tabindex="-1" href="http://mozilla.com/firefox/channel/">Future Releases</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-mobile"><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="http://mozilla.com/mobile/">Mobile</a> 
+						<ul id="nav-main-mobile-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/mobile/">Mobile Overview</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/download/">Download</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/features/">Features</a></li><li><a tabindex="-1" href="https://addons.mozilla.org/mobile/?browse=featured">Customize</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/sync/">Sync</a></li> 
+							<li><a tabindex="-1" href="https://developer.mozilla.org/mobile">Develop</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/getinvolved/">Get Involved</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/faq/">FAQ</a></li> 
+							<li class="last"><a tabindex="-1" href="https://blog.mozilla.com/mobile/">Blog</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-addons"><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">Add-ons</a> 
+						<ul id="nav-main-addons-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="https://addons.mozilla.org/firefox/">Firefox Add-ons</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/featured/">Featured Add-ons</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/extensions/">Extensions</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/themes/">Themes</a></li> 
+							<li><a tabindex="-1" href="http://www.getpersonas.com/">Personas</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/search-tools/">Search Tools</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/language-tools/">Language Support</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/collections/">Collections</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li> 
+							<li class="last"><a tabindex="-1" href="https://addons.mozilla.org/firefox/developers/">Developer Hub</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-support"><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.com/">Support</a> 
+						<ul id="nav-main-support-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://support.mozilla.com/kb/">Firefox Support</a></li> 
+							<li><a tabindex="-1" href="http://support.mozilla.com/mobile">Mobile Support</a></li> 
+							<li class="last"><a tabindex="-1" href="http://support.mozillamessaging.com/kb/">Thunderbird Support</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-about" class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="http://mozilla.com/about/">About</a> 
+						<ul id="nav-main-about-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/about/">About Firefox</a></li> 
+							<li><a tabindex="-1" href="http://www.mozilla.org/join">Join Mozilla</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/participate/">Participate</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/press/">Press Center</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/careers.html">Careers</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/partnerships.html">Partnerships</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/legal.html">Legal</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/contact.html">Contact Us</a></li> 
+							<li class="last"><a tabindex="-1" href="http://blog.mozilla.com/">Blog</a></li> 
+						</ul>
+					</li> 
+				</ul>
+			</nav>
+		</header>
+		<div id="wsactwrap">
+			<div id="wsact">
+				
+				<h1>Get the T-shirt. Join Mozilla.</h1>
+				<div class="wsshirts">
+					This is the <strong>official Firefox t-shirt, available <em>only</em> to supporters,</strong> and it's yours when you join Mozilla today. Sign up here &mdash; <strong>the only place on the Web to get the official Firefox t-shirt.</strong>
+				</div>
+				<div class="in wsform">
+					<form id="wsniceform" action="/page/cde/Contribution/Charge" method="post">
+						<input name="slug" value="protect-the-web" type="hidden">
+						<input name="http_referer" value="" type="hidden">
+						<input name="event_attendee_id" value="" type="hidden">
+						<input name="outreach_page_id" value="" type="hidden">
+						<input name="stg_signup_id" value="" type="hidden">
+						<input name="mailing_link_id" value="" type="hidden">
+						<input name="mailing_recipient_id" value="" type="hidden">
+						<input name="match_campaign_id" value="" type="hidden">
+						<input name="match_is_pledge" value="" type="hidden">
+						<input name="contributor_key" value="" type="hidden">
+						<input name="default_country" value="US" type="hidden">
+						<input name="signup_optin_required" value="1" type="hidden">
+						<input name="cc_number_ack" value="" type="hidden">
+						<input name="ach_account_number_ack" value="" type="hidden">
+						<input name="signup_optin" value="1" type="hidden">
+						<input name="amount" value="30" type="hidden">
+						<input name="ach_routing_number" value="" type="hidden">
+						<input name="ach_account_number" value="" type="hidden">
+						<input name="ach_account_name" value="" type="hidden">
+						<input name="bestcontacttime" value="" type="hidden">
+						<input id="wscustom1" name="custom1" value="" type="hidden">
+						<!-- Here's where we layout our nice imitation form. 
+						     Only users with JS disabled will see the old one.
+						 -->
+						<div id="wsamount">
+							<strong>Amount: Donate $30</strong> to get the official Firefox t-shirt and help Mozilla build a better Web. Wear your shirt with pride as an official supporter.
+						</div>
+						<input id="wsfirstname" name="firstname" type="text" value="First Name" class="text colone">
+						<input id="wslastname" name="lastname" type="text" value="Last Name" class="text coltwo">
+						<input id="wsaddr1" name="addr1" type="text" value="Street" class="text double">
+						<input id="wsaddr2" name="addr2" type="text" value="Street 2 (apt, ste, etc)" class="text double">
+						<input id="wscity" name="city" type="text" value="City" class="text colone">
+						<!-- My State Picker (BSD only requires state for U.S. and Canada) -->
+						<select id="wsstate_cd" name="state_cd" class="select coltwo">
+							<option selected="selected" value="">State/Province</option>
+							<option value="">None</option>
+							<optgroup label="U.S. States and Territories">
+								<option value="AL">Alabama</option>
+								<option value="AK">Alaska</option>
+								<option value="AS">American Samoa</option>
+								<option value="AZ">Arizona</option>
+								<option value="AR">Arkansas</option>
+								<option value="AP">Armed Forces Pacific</option>
+								<option value="CA">California</option>
+								<option value="CO">Colorado</option>
+								<option value="CT">Connecticut</option>
+								<option value="DE">Delaware</option>
+								<option value="DC">District of Columbia</option>
+								<option value="FL">Florida</option>
+								<option value="GA">Georgia</option>
+								<option value="GU">Guam</option>
+								<option value="HI">Hawaii</option>
+								<option value="ID">Idaho</option>
+								<option value="IL">Illinois</option>
+								<option value="IN">Indiana</option>
+								<option value="IA">Iowa</option>
+								<option value="KS">Kansas</option>
+								<option value="KY">Kentucky</option>
+								<option value="LA">Louisiana</option>
+								<option value="ME">Maine</option>
+								<option value="MH">Marshall Islands</option>
+								<option value="MD">Maryland</option>
+								<option value="MA">Massachusetts</option>
+								<option value="MI">Michigan</option>
+								<option value="FM">Micronesia</option>
+								<option value="MN">Minnesota</option>
+								<option value="UM">Minor Outlying Islands</option>
+								<option value="MS">Mississippi</option>
+								<option value="MO">Missouri</option>
+								<option value="MT">Montana</option>
+								<option value="NE">Nebraska</option>
+								<option value="NV">Nevada</option>
+								<option value="NH">New Hampshire</option>
+								<option value="NJ">New Jersey</option>
+								<option value="NM">New Mexico</option>
+								<option value="NY">New York</option>
+								<option value="NC">North Carolina</option>
+								<option value="ND">North Dakota</option>
+								<option value="MP">Northern Mariana Islands</option>
+								<option value="OH">Ohio</option>
+								<option value="OK">Oklahoma</option>
+								<option value="OR">Oregon</option>
+								<option value="PW">Palau</option>
+								<option value="PA">Pennsylvania</option>
+								<option value="PR">Puerto Rico</option>
+								<option value="RI">Rhode Island</option>
+								<option value="SC">South Carolina</option>
+								<option value="SD">South Dakota</option>
+								<option value="TN">Tennessee</option>
+								<option value="TX">Texas</option>
+								<option value="UT">Utah</option>
+								<option value="VT">Vermont</option>
+								<option value="VI">Virgin Islands</option>
+								<option value="VA">Virginia</option>
+								<option value="WA">Washington</option>
+								<option value="WV">West Virginia</option>
+								<option value="WI">Wisconsin</option>
+								<option value="WY">Wyoming</option>
+							</optgroup>
+							<optgroup label="Canadian Provinces">
+								<option value="Alberta">Alberta</option>
+								<option value="British Columbia">British Columbia</option>
+								<option value="Manitoba">Manitoba</option>
+								<option value="New Brunswick">New Brunswick</option>
+								<option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+								<option value="Northwest Territories">Northwest Territories</option>
+								<option value="Nova Scotia">Nova Scotia</option>
+								<option value="Nunavut">Nunavut</option>
+								<option value="Ontario">Ontario</option>
+								<option value="Prince Edward Island">Prince Edward Island</option>
+								<option value="Quebec">Quebec</option>
+								<option value="Saskatchewan">Saskatchewan</option>
+								<option value="Yukon">Yukon</option>
+							</optgroup>
+						</select>
+						<input id="wszip" name="zip" type="text" value="Zip" class="text colone">
+						<select id="wscountry" name="country" class="select coltwo">
+							<option value="" selected="selected">Country</option><option value="US">United States</option>
+							<option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CO">Colombia</option><option value="KM">Comoros Islands</option><option value="CD">Congo, Democratic Republic of the</option><option value="CG">Congo, Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option>
+							<option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TP">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">South Korea</option><option value="XK">Kosovo</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option>
+							<option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Island</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option>
+							<option value="RW">Rwanda</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SH">St. Helena</option><option value="PM">St. Pierre and Miquelon</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US">United States</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VI">Virgin Islands (U.S.)</option><option value="WF">Wallis and Futuna Islands</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+						</select>
+						<input id="wsemail" name="email" type="email" value="Email Address" class="text double">
+						<div class="colone">
+							<strong>Your form of payment:</strong>
+							<label for="wscc_mc" class="radio"><input id="wscc_mc" name="cc_type_cd" value="mc" type="radio" onclick="wsDoCCToggle()">MasterCard</label>
+							<label for="wscc_vs" class="radio"><input id="wscc_vs" name="cc_type_cd" value="vs" type="radio" onclick="wsDoCCToggle()">Visa</label>
+							<label for="wscc_pp" id="wscc_pp_label" class="radio"><input id="wscc_pp" name="cc_type_cd" value="pp" type="radio" onclick="wsDoCCToggle()">PayPal</label>
+							<input id="wscc_number" name="cc_number" type="text" autocomplete="off" value="Credit Card Number" class="text colone">
+							<select id="wscc_expir_month" autocomplete="off" name="cc_expir_month" class="select colone">
+								<option selected="selected" value="">Expiration Month</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+							</select>
+							<select id="wscc_expir_year" autocomplete="off" name="cc_expir_year" class="select colone">
+								<option selected="selected" value="">Expiration Year</option>
+								<option value="2011">2011</option>
+								<option value="2012">2012</option>
+								<option value="2013">2013</option>
+								<option value="2014">2014</option>
+								<option value="2015">2015</option>
+								<option value="2016">2016</option>
+								<option value="2017">2017</option>
+								<option value="2018">2018</option>
+								<option value="2019">2019</option>
+								<option value="2020">2020</option>
+								<option value="2021">2021</option>
+							</select>
+						</div>
+						<div class="coltwo">
+							<strong>Your Firefox t-shirt options:</strong>
+							<select id="wscustom1_fit" name="custom1_fit" class="select coltwo">
+								<option selected="selected" value="">Style</option>
+								<option value="womens">Women's</option>
+								<option value="mens">Men's</option>
+							</select>
+							<select id="wscustom1_size" name="custom1_size" class="select coltwo">
+								<option selected="selected" value="">Size</option>
+								<option value="s">Small</option>
+								<option value="m">Medium</option>
+								<option value="l">Large</option>
+								<option value="xl">XL</option>
+								<option value="xxl">XXL</option>
+							</select>
+							<select id="wscustom2" name="custom2" class="select coltwo">
+								<option selected="selected" value="">Color</option>
+								<option value="blue">Blue</option>
+								<option value="black">Black</option>
+								<option value="grey">Grey</option>
+							</select>
+							<label for="wslegal_confirm" id="wslegal_confirm_checkbox" class="checkbox"><input id="wslegal_confirm" name="legal_confirm" value="1" type="checkbox">I agree to the </label><label class="checkbox"><a href="http://www.mozilla.org/about/policies/privacy-policy.html" target="_blank">Mozilla privacy policy</a>.</label>
+						</div>
+						<div class="colone">
+							<strong>Your special gift* <span>(optional)</span>:</strong>
+							<input id="wscustom_amount" name="wscustom_amount" type="text" value="Additional Amount" class="text colone">
+							<small>*Add a donation of any amount to your $30 order, and we'll use to it build a better Web.</small>
+						</div>
+						<div class="coltwo">
+							<input id="submitter" value="Place Order" type="submit">
+						</div>						
+						<div class="clearall">
+						</div>
+						<div id="wssmallprint">
+							By clicking 'Place Order' you will be registered as an annual Mozilla Supporter. Members will receive occasional email updates from Mozilla. You can unsubscribe at any time.
+							<br><br>
+							Unfortunately, we can only currently ship the T-shirt to your billing address.
+							<br><br>
+							Contributions go to the Mozilla Foundation, a 501(c)(3) organization, to be used in its discretion for its charitable purposes. They are tax-deductible in the U.S. to the fullest extent permitted by law. Fair market value of the T-shirt is $7 USD.
+						</div>
+					</form>
+					<script type="text/javascript"> 
+						
+						function wsDoCCToggle()
+						{
+							if (document.getElementById("wscc_pp").checked)
+							{
+								document.getElementById("wscc_number").style.visibility = "hidden";
+								document.getElementById("wscc_expir_month").style.visibility = "hidden";
+								document.getElementById("wscc_expir_year").style.visibility = "hidden";
+							}
+							else
+							{
+								document.getElementById("wscc_number").style.visibility = "visible";
+								document.getElementById("wscc_expir_month").style.visibility = "visible";
+								document.getElementById("wscc_expir_year").style.visibility = "visible";
+							}
+						}
+						
+						document.getElementById("wsniceform").onsubmit = function()
+						{
+							// Validate the form inputs (make sure their name isn't 'First Name', etc)
+							if (formValidates())
+							{
+								// grab custom field data and shoehorn it in to the hidden element:
+								document.getElementById("wscustom1").value = document.getElementById("wscustom1_fit").value + " " + document.getElementById("wscustom1_size").value;
+								// disable to prevent submission:
+								document.getElementById("wscustom1_fit").disabled = true;
+								document.getElementById("wscustom1_size").disabled = true;
+								
+								if (document.getElementById("wscustom_amount").value != originalPlaceholder.wscustom_amount)
+									document.getElementById("wsamount").value = parseInt(document.getElementById("wsamount").value, 10) + document.getElementById("wscustom_amount").value;
+								
+								document.getElementById("wscustom_amount").disabled = true;
+								
+								if (document.getElementById("wscc_pp").checked)
+								{
+									document.getElementById("wscc_number").disabled = true;
+									document.getElementById("wscc_expir_month").disabled = true;
+									document.getElementById("wscc_expir_year").disabled = true;
+								}
+								else
+								{
+									document.getElementById("wscc_number").disabled = false;
+									document.getElementById("wscc_expir_month").disabled = false;
+									document.getElementById("wscc_expir_year").disabled = false;
+								}
+								
+								document.getElementById("wsaddr2").value = document.getElementById("wsaddr2").value.replace(originalPlaceholder.wsaddr2, "");
+								
+					            // webtrends tracking
+					            dcsMultiTrack(
+					                'DCS.dcssip', 'donate.mozilla.org',
+					                'DCS.dcsuri', '/page/cde/Contribution/Charge',
+					                'WT.ti', 'Link: Join Mozilla English Signup',
+					                'WT.dl', 99,
+					                'WT.z_convert', 'Join Mozilla English Signup',
+					                'WT.si_n', 'Join Mozilla English Signup',
+					                'WT.si_x', '2');
+								
+								return true;
+							}
+							else
+							{
+								return false;
+							}
+						}
+						
+						wsTest = {
+							/*
+							 * Test for empty input. This is the only testing function that auto-trims input.
+							 */
+							IsEmpty: function(str)
+							{
+								if (str.replace(/\s*/g, "").length == 0)
+									return true;
+								return false;
+							},
+							/*
+							 * Test for a valid email
+							 */
+							ValidEmail: function(str)
+							{
+								return (/^([\w\-\+]+)(\.[\w\-\+]+)*@([\w\-]+)(\.[\w\-]+)+$/.test(str));
+							},
+							/*
+							 * Runs function when all images and DOM has loaded
+							 */
+							DOMOnLoaded: function(func)
+							{
+								if ((ws.Browser.isIE && !ws.Browser.isCSS3IE) || (ws.Browser.isCSS3IE && ws.Browser.isLegacyMode))
+									window.attachEvent("onload", wsOnLoad);
+								else if (document.addEventListener)
+									window.addEventListener("load", wsOnLoad, false);
+								else
+									window.setTimeout(func, 4000);
+							}
+						};
+						
+						function errorBuilder(makeIt, errText)
+						{
+							if (makeIt)
+								return ("\n - " + errText);
+							else
+								return "";
+						}
+
+						function formValidates()
+						{
+							var errorText = "";
+
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wsfirstname").value.replace(originalPlaceholder.wsfirstname, "")), "Your first name");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wslastname").value.replace(originalPlaceholder.wslastname, "")), "Your last name");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wsaddr1").value.replace(originalPlaceholder.wsaddr1, "")), "Your address");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscity").value.replace(originalPlaceholder.wscity, "")), "Your city");
+							if (document.getElementById("wscountry").value == "US" || document.getElementById("wscountry").value == "CA" || document.getElementById("wscountry").value == "")
+								errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wsstate_cd").value), "Your state/province");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wszip").value.replace(originalPlaceholder.wszip, "")), "Your zip");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscountry").value), "Your country");
+							errorText += errorBuilder(!wsTest.ValidEmail(document.getElementById("wsemail").value.replace(originalPlaceholder.wsemail, "")), "Your valid email address");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscustom1_fit").value.replace(originalPlaceholder.wscustom1_fit, "")), "Your t-shirt style");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscustom1_size").value.replace(originalPlaceholder.wscustom1_size, "")), "Your t-shirt size");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscustom2").value.replace(originalPlaceholder.wscustom2, "")), "Your t-shirt color");
+							errorText += errorBuilder(!(document.getElementById("wscc_mc").checked || document.getElementById("wscc_vs").checked || document.getElementById("wscc_pp").checked), "Your form of payment");
+							
+							// if not paypal:
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscc_number").value.replace(originalPlaceholder.wscc_number, "")) && (!document.getElementById("wscc_pp").checked), "Your credit card number");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscc_expir_month").value.replace(originalPlaceholder.wscc_expir_month, "")) && (!document.getElementById("wscc_pp").checked), "Your credit card expiration month");
+							errorText += errorBuilder(wsTest.IsEmpty(document.getElementById("wscc_expir_year").value.replace(originalPlaceholder.wscc_expir_year, "")) && (!document.getElementById("wscc_pp").checked), "Your credit card expiration year");
+							
+							errorText += errorBuilder(!document.getElementById("wslegal_confirm").checked, "Your agreement to the Mozilla privacy policy");
+
+							if (document.getElementById("wscustom_amount").value != originalPlaceholder.wscustom_amount)
+								errorText += errorBuilder(!(/^[\d]+(\.[\d][\d]?)?$/.test(document.getElementById("wscustom_amount").value)), "Your valid special gift amount")
+
+							if (errorText == "")
+							{
+								return true;
+							}
+							else
+							{
+								alert("Please correct the following:" + errorText);
+								return false;
+							}
+						}
+
+						function pageLoaded()
+						{
+							// Setup placeholder restoring function:
+							window.originalPlaceholder = {
+								wsfirstname: "First Name",
+								wslastname: "Last Name",
+								wsaddr1: "Street",
+								wsaddr2: "Street 2 (apt, ste, etc)",
+								wscity: "City",
+								wszip: "Zip",
+								wsemail: "Email Address",
+								wscc_number: "Credit Card Number",
+								wscustom_amount: "Additional Amount"
+							};
+							var inputs = document.getElementsByTagName("input");
+							for (var i = 0; i < inputs.length; i++)
+							{
+								// Don't want to change the buttons!
+								if (inputs[i].type.toLowerCase() == "submit" || inputs[i].type.toLowerCase() == "button")
+									continue;
+
+								inputs[i].onfocus = function()
+								{
+									if (originalPlaceholder[this.id] == this.value)
+										this.value = "";
+								}
+								inputs[i].onblur = function()
+								{
+									if (this.value == "")
+										this.value = originalPlaceholder[this.id];
+								}
+							}
+							
+							// Check to see if we have returned to this page as the result of an error condition:
+							var errorConds = document.getElementsByTagName("*");
+							var errorStr = "";
+							for (var i = 0; i < errorConds.length; i++)
+							{
+								if ((errorConds[i].className == "contriberrorbanner" || errorConds[i].className == "error")
+								   && !(/required field/gi.test(errorConds[i].innerHTML) || errorConds[i].innerHTML == ""))
+								{
+									var errtext = errorConds[i].innerHTML.replace(/(<br>)|[\n\r\t]/gi, "");
+									errorStr += errtext.charAt(0).toUpperCase() + errtext.slice(1) + "\n";
+								}
+							}
+							if (errorStr != "")
+								alert(errorStr);
+							
+							document.getElementById("wscustom1_fit").disabled = false;
+							document.getElementById("wscustom1_size").disabled = false;
+							document.getElementById("wscustom_amount").disabled = false;
+						}
+
+						window.onload = pageLoaded;
+
+					</script>
+					<!-- END OF TOP OF WRAPPER, WHAT FOLLOWS IS BSD INSERTED FORM: -->
+					<div class="bsd-contribForm-wrap bsd-contribForm-oneCol">
+						<div class="bsd-contribForm-aboveContent">
+						</div>
+		               	<form name="contribution" action="/page/cde/Contribution/Charge#act-3" method="post" id="contribution">
+							<input name="slug" value="protect-the-web" type="hidden">
+							<input name="http_referer" value="" type="hidden">
+							<input name="event_attendee_id" value="" type="hidden">
+							<input name="outreach_page_id" value="" type="hidden">
+							<input name="stg_signup_id" value="" type="hidden">
+							<input name="mailing_link_id" value="" type="hidden">
+							<input name="mailing_recipient_id" value="" type="hidden">
+							<input name="match_campaign_id" value="" type="hidden">
+							<input name="match_is_pledge" value="" type="hidden">
+							<input name="contributor_key" value="" type="hidden">
+							<input id="default_country" name="default_country" value="US" type="hidden">
+							<input name="signup_optin_required" value="1" type="hidden">
+							<input name="cc_number_ack" value="" type="hidden">
+							<input name="ach_account_number_ack" value="" type="hidden">
+							<table>
+								<tbody>
+								<tr>
+									<td class="contribcolumn">
+										<table>
+											<tbody>
+											<tr>
+												<td>
+													Contributor
+												</td>
+											</tr>
+											<tr>
+												<td class="nested_table">
+													<table>
+														<tbody>
+														<tr></tr>
+														<tr>
+															<td colspan="2" class="nested_table">
+																<table id="country_table">
+																	<tbody>
+																	<tr>
+																		<td>
+																			<label class="fieldlabel">country<br></label>
+																			<select id="country" name="country">
+																				<option value=""></option><option value="AF">Afghanistan</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BR">Brazil</option><option value="VG">British Virgin Islands</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CO">Colombia</option><option value="KM">Comoros Islands</option><option value="CD">Congo, Democratic Republic of the</option><option value="CG">Congo, Republic of the</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="CI">Cote D'ivoire</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option>
+																				<option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="TP">East Timor</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands (Malvinas)</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="VA">Holy See (Vatican City State)</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KR">South Korea</option><option value="XK">Kosovo</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option>
+																				<option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macau</option><option value="MK">Macedonia</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova, Republic of</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="AN">Netherlands Antilles</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PW">Palau</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn Island</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russian Federation</option>
+																				<option value="RW">Rwanda</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="ST">Sao Tome and Principe</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SH">St. Helena</option><option value="PM">St. Pierre and Miquelon</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SZ">Swaziland</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom</option><option value="US" selected="selected">United States</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VE">Venezuela</option><option value="VN">Viet Nam</option><option value="VI">Virgin Islands (U.S.)</option><option value="WF">Wallis and Futuna Islands</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option>
+																			</select>
+																		</td>
+																	</tr>
+																	</tbody>
+																</table>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel">first name<br></label><input size="14" id="firstname" name="firstname" type="text">
+															</td>
+															<td>
+																<label class="fieldlabel">last name<br></label><input size="22" id="lastname" name="lastname" type="text">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">address<br></label><input size="40" id="addr1" name="addr1" type="text">
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input size="40" id="addr2" name="addr2" type="text">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">city<br></label><input size="20" id="city" name="city" type="text">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">state/region/province<br></label><select name="state_cd" id="state_cd" class="state_cd"><option selected="selected" value=""></option><option value="AK">AK</option><option value="AL">AL</option><option value="AR">AR</option><option value="AZ">AZ</option><option value="CA">CA</option><option value="CO">CO</option><option value="CT">CT</option><option value="DC">DC</option><option value="DE">DE</option><option value="FL">FL</option><option value="GA">GA</option><option value="HI">HI</option><option value="IA">IA</option><option value="ID">ID</option><option value="IL">IL</option><option value="IN">IN</option><option value="KS">KS</option><option value="KY">KY</option><option value="LA">LA</option><option value="MA">MA</option><option value="MD">MD</option><option value="ME">ME</option><option value="MI">MI</option><option value="MN">MN</option><option value="MO">MO</option><option value="MS">MS</option><option value="MT">MT</option><option value="NC">NC</option><option value="ND">ND</option><option value="NE">NE</option><option value="NH">NH</option><option value="NJ">NJ</option><option value="NM">NM</option><option value="NV">NV</option><option value="NY">NY</option><option value="OH">OH</option><option value="OK">OK</option><option value="OR">OR</option><option value="PA">PA</option><option value="RI">RI</option><option value="SC">SC</option><option value="SD">SD</option><option value="TN">TN</option><option value="TX">TX</option><option value="UT">UT</option><option value="VA">VA</option><option value="VT">VT</option><option value="WA">WA</option><option value="WI">WI</option><option value="WV">WV</option><option value="WY">WY</option><option value="--">---</option><option value="AP">AP</option><option value="AS">AS</option><option value="FM">FM</option><option value="GU">GU</option><option value="MH">MH</option><option value="MP">MP</option><option value="PR">PR</option><option value="PW">PW</option><option value="VI">VI</option></select>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">zip<br></label><input size="10" id="zip" name="zip" type="text">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">email address<br></label><input class="text" size="40" id="email" name="email" type="email">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input id="signup_optin" name="signup_optin" value="1" type="checkbox"><label for="signup_optin"><span class="radio">Sign up for the mailing list</span></label>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="contribheader">
+													Choose Your Destiny
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table class="amounts">
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input onclick="" id="q_0" name="amount" value="5" type="radio"><label for="q_0"><span class="radio">$5.00 - Sign me up as a Mozilla supporter</span></label>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input onclick="" id="q_1" name="amount" value="30" type="radio"><label for="q_1"><span class="radio">$30.00 - Sign me up as a Mozilla supporter and send me a Mozilla Firefox T-shirt</span></label>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="contribheader">
+													Payment Options
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input class="cc_type_cd" id="cc_mc" name="cc_type_cd" value="mc" type="radio"><label for="cc_mc" class="cc_type_cd_label" id="cc_label_mc"><span class="radio">MasterCard</span></label>&nbsp;<input class="cc_type_cd" id="cc_vs" name="cc_type_cd" value="vs" type="radio"><label for="cc_vs" class="cc_type_cd_label" id="cc_label_vs"><span class="radio">Visa</span></label>&nbsp;<input class="cc_type_cd" id="cc_pp" name="cc_type_cd" value="pp" type="radio"><label for="cc_pp" class="cc_type_cd_label" id="cc_label_pp"><span class="radio">PayPal</span></label>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table id="payment_options">
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">card number<br></label><input size="18" id="cc_number" autocomplete="off" name="cc_number" type="text">
+															</td>
+															<td>
+																<label class="fieldlabel">expiration<br></label><select id="cc_expir_month" autocomplete="off" name="cc_expir_month"><option selected="selected" value="">Month</option><option value="01">01</option><option value="02">02</option><option value="03">03</option><option value="04">04</option><option value="05">05</option><option value="06">06</option><option value="07">07</option><option value="08">08</option><option value="09">09</option><option value="10">10</option><option value="11">11</option><option value="12">12</option></select>&nbsp;<select id="cc_expir_year" autocomplete="off" name="cc_expir_year"><option selected="selected" value="">Year</option><option value="2011">2011</option><option value="2012">2012</option><option value="2013">2013</option><option value="2014">2014</option><option value="2015">2015</option><option value="2016">2016</option><option value="2017">2017</option><option value="2018">2018</option><option value="2019">2019</option><option value="2020">2020</option><option value="2021">2021</option></select>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+													<table id="ach_payment_info" style="display: none;">
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">account type<br></label><input class="ach_account_type" id="ach_account_type_CHECKING" name="ach_account_type" value="CHECKING" type="radio"><label for="ach_account_type_CHECKING"><span class="radio">Checking</span></label>&nbsp;<input class="ach_account_type" id="ach_account_type_SAVINGS" name="ach_account_type" value="SAVINGS" type="radio"><label for="ach_account_type_SAVINGS"><span class="radio">Savings</span></label>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel">routing number<br></label><input size="9" id="ach_routing_number" autocomplete="off" name="ach_routing_number" type="text">
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel">account number<br></label><input size="20" id="ach_account_number" autocomplete="off" name="ach_account_number" type="text">
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel">name on account<br></label><input size="40" id="ach_account_name" name="ach_account_name" type="text">
+															</td>
+														</tr>
+														</tbody>
+													</table>
+													<div id="paypal_notice" style="display: none;">
+														You will be prompted to provide your PayPal account information upon clicking the Process Contribution button
+													</div>
+												</td>
+											</tr>
+											<tr>
+												<td class="contribheader">
+													Legal Compliance
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel"></label><input class="legal_confirm_checkbox" id="legal_confirm" name="legal_confirm" value="1" type="checkbox"><label for="legal_confirm">I agree to the</label> <a href="http://www.mozilla.org/about/policies/privacy-policy.html" target="_blank">Mozilla privacy policy</a><label>.</label>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="contribheader">
+													T-Shirt Size
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<table>
+														<tbody>
+														<tr>
+															<td>
+																<label class="fieldlabel">Size<br></label><input name="custom1" id="custom1" value="" type="hidden"><select name="custom1_fit" id="custom1_fit"><option selected="selected" value="womens">Women's</option><option value="mens">Men's</option><option value=""></option></select><select name="custom1_size" id="custom1_size"><option selected="selected" value="s">Small</option><option value="m">Medium</option><option value="l">Large</option><option value="xl">XL</option><option value="xxl">XXL</option><option value=""></option></select>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<label class="fieldlabel">Color<br></label><select name="custom2" id="custom2"><option selected="selected" value="blue">Blue</option><option value="black">Black</option><option value="grey">Grey</option><option value=""></option></select>
+															</td>
+														</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								<tr>
+									<td class="contribbutton" colspan="2">
+										<div style="display: none;">
+											<label for="bestcontacttime">Please leave this field blank:</label> <input id="bestcontacttime" name="bestcontacttime" type="text">
+										</div>
+										<table>
+											<tbody>
+											<tr>
+												<td>
+													<label class="fieldlabel"></label>
+													<input id="processbutton" value="Process Contribution" type="submit">
+												</td>
+											</tr>
+											</tbody>
+										</table>
+									</td>
+								</tr>
+								</tbody>
+							</table>
+						</form>
+						<script type="text/javascript" language="javascript">
+							var submitted_state_cd = "";
+							var module_text = { "total_contribution_label" : "Total Contribution:" }
+						</script>
+						<div class="bsd-contribForm-belowContent">
+						</div>
+					</div><!-- End form wrapper -->
+					<!-- BEGINNING OF BOTTOM OF WRAPPER -->
+				</div><!--/in-->
+				<div class="clearall">
+				</div>
+				
+			</div>
+		</div>
+	</div><!--/wsact1-->
+	<footer id="footer-wrap">
+		<div id="footer" class="clearfix"> 
+			<div id="footer-in"> 
+				<div class="six-col"> 
+					<a id="logo-footer" href="http://mozilla.org/"><img src="webassets/mozilla-logo-alt.png" alt="Mozilla" width="109" height="98"></a> 
+					<p id="copyright"> 
+						Portions of this content are ©1998–2011 by individual 
+						mozilla.org contributors. Content available under a Creative Commons <a href="http://mozilla.org/foundation/licensing/website-content.html">license</a>.
+					</p> 
+					<ul id="copyright-links">
+						<li><a href="http://mozilla.org/contact/" class="first">Contact Us</a></li> 
+						<li><a href="http://mozilla.org/about/policies/privacy-policy.html">Privacy Policy</a></li> 
+						<li><a href="http://www.mozilla.com/en-US/about/legal.html">Legal Notices</a></li> 
+						<li><a href="http://www.mozilla.com/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a> </li> 
+					</ul>
+				</div> 
+				<div id="footer-navs"> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>About Us</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://mozilla.org/about/mission.html">Our Mission</a></li> 
+							<li><a href="http://mozilla.org/about/forums/">Forums</a></li> 
+							<li><a href="http://mozilla.org/about/governance.html">Governance</a></li> 
+							<li><a href="http://mozilla.org/about/organizations.html">Organizations</a></li> 
+							<li><a href="http://mozilla.org/grants/">Grants</a></li> 
+							<li><a href="http://mozilla.org/about/history.html">History</a></li> 
+							<li><a href="http://mozilla.org/about/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>Community Map</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://mozilla.org/community/index.html#applications">Applications</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#code">Code</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#incubators">Incubators</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#community-sites">Community Sites</a></li> 
+							<li><a href="http://mozilla.org/community/directory.html">Directory</a></li> 
+							<li><a href="http://mozilla.org/community/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>Our Projects</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://www.firefox.com/">Firefox</a></li> 
+							<li><a href="http://www.getthunderbird.com/">Thunderbird</a></li> 
+							<li><a href="http://www.drumbeat.org/projects">Drumbeat</a></li> 
+							<li><a href="http://www.mozillalabs.com/projects">Mozilla Labs</a></li> 
+							<li><a href="http://mozilla.org/support">Support</a></li> 
+							<li><a href="https://addons.mozilla.org/">Add-ons</a></li> 
+							<li><a href="http://input.mozilla.com/">Feedback</a></li> 
+							<li><a href="http://mozilla.org/security/announce">Security Advisories</a></li> 
+							<li><a href="http://mozilla.org/projects/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col last"> 
+						<h5 class="footer-nav-title"><strong>Get Involved</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="https://developer.mozilla.org/En/Developer_Guide">Developing</a></li> 
+							<li><a href="https://developer.mozilla.org/Project:en/How_to_Help">Documentation</a></li> 
+							<li><a href="https://donate.mozilla.org/page/contribute/openwebfund">Donate</a></li> 
+							<li><a href="https://wiki.mozilla.org/L10n">Localization</a></li> 
+							<li><a href="http://contribute.mozilla.org/Marketing">Marketing</a></li> 
+							<li><a href="http://quality.mozilla.org/">Testing</a></li> 
+							<li><a href="http://blog.mozilla.com/webdev/get-involved/">Webdev</a></li> 
+							<li><a href="http://mozilla.org/contribute">More…</a></li> 
+						</ul>
+					</div> 
+				</div> 
+			</div> 
+		</div><!--/footer--> 
+		<!-- START OF SmartSource Data Collector TAG -->
+		<!-- Copyright (c) 1996-2010 WebTrends Inc.  All rights reserved. -->
+		<!-- Version: 8.6.2 -->
+		<!-- Tag Builder Version: 3.0  -->
+		<!-- Created: 5/10/2010 6:56:34 PM -->
+		<script src="webassets/webtrends.js" type="text/javascript"></script>
+		<!-- Warning: The two script blocks below must remain inline. Moving them to an
+		external -->
+		<!-- JavaScript include file can cause serious problems with cross-domain
+		tracking.      -->
+		<script type="text/javascript">
+			//<![CDATA[
+			var _tag=new WebTrends();
+			_tag.dcsGetId();
+			//]]>>
+		</script>
+		<script type="text/javascript">
+			//<![CDATA[
+			// Add custom parameters here.
+			//_tag.DCSext.param_name=param_value;
+			_tag.dcsCollect();
+			//]]>>
+		</script>
+		<noscript>
+			<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://statse.webtrendslive.com/dcsis0ifv10000gg3ag82u4rf_7b1e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"></div>
+		</noscript>
+		<!-- END OF SmartSource Data Collector TAG -->
+	</footer>
+</body>
+</html>

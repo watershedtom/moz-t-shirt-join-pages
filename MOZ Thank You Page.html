@@ -1,0 +1,620 @@
+<!DOCTYPE HTML>
+<html class="" lang="en">
+<head>
+	<style type="text/css"></style>
+	<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+	<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->
+	<!--<![endif]-->
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<title>Join Mozilla  |  Protect The Web</title>
+	<!-- Empty conditional comment hack
+ 		Prevents load stacking in IE8
+ 		See http://www.phpied.com/conditional-comments-block-downloads/ -->
+	<!--[if IE]><![endif]-->
+	<!-- Chrome Frame for browsers that support it -->
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="viewport" content="width=980">
+	<meta name="WT.si_n" content="Join Mozilla English Signup">
+	<meta name="WT.si_x" content="1">
+	<link rel="shortcut icon" type="image/ico" href="https://donate.mozilla.org/page/smartproxy/BSD_CApMXA8IBxoKQVc/AwRAXAALCBoMUF8">
+	<link rel="stylesheet" href="webassets/main.css" type="text/css" media="screen">
+	<script type="text/javascript" src="webassets/modernizr.js"></script>
+	<link rel="canonical" href="https://donate.mozilla.org/page/contribute/protect-the-web">
+	<link rel="stylesheet" href="webassets/display_page.css" type="text/css">
+	<link rel="stylesheet" href="webassets/jquery_ui_reset.css" type="text/css">
+	
+	<style>
+		
+		body #footer-in
+		{
+			max-width: 100%;  /* for some reason footer-in is 23000 px wide, causing a horiz scroll bar on IE */
+		}
+		body
+		{
+			min-width: 980px;  /* otherwise gray top-border won't be present when user scrolls right if window is too narrow */
+			background-image: url(webassets/moz-join-repeatingbg.gif);
+		}
+		body #header
+		{
+			margin-bottom: 20px;
+			z-index: 10;
+		}
+		#wsactwrap
+		{
+			min-width: 980px;
+			padding-bottom: 180px;
+			background-image: url(webassets/moz-join-peoplebg.gif);
+			background-repeat: no-repeat;
+			background-position: bottom center;
+		}
+		#wsact
+		{
+			width: 980px;
+			margin: auto;
+			font-size: 16px;
+			line-height: 20px;
+			color: #484848;
+		}
+		#wsact h1
+		{
+			width: 961px;
+			margin: 0px 0px 17px 0px;
+			padding: 0px 0px 17px 0px;
+			font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
+			font-size: 78px;
+			line-height: 78px;
+			font-weight: normal;
+			text-transform: uppercase;
+			color: #484848;
+			background-image: url(webassets/moz-join-dotted.png);
+			background-position: left bottom;
+			background-repeat: repeat-x;
+		}
+		.wsshirts
+		{
+			float: left;
+			width: 351px;
+			margin-right: 22px;
+			background-image: url(webassets/moz-join-tshirts.png);
+			background-repeat: no-repeat;
+			background-position: 0px 110px;
+			height: 560px;
+		}
+		.wsform
+		{
+			float: left;
+			width: 594px;
+			z-index: 0;
+		}
+		#wsniceform #wsamount
+		{
+			padding-bottom: 16px;
+		}
+		#wsniceform .text, #wsniceform .select
+		{
+			background-color: #f5fafe;
+			border-color: #c3d5e3;
+			height: auto;  /* for IE */
+			border: expression("1px solid ActiveCaption"); /* for IE7 and earlier */
+			margin: 0px 0px 10px 0px;
+		}
+		#wsniceform .text
+		{
+			padding: 4px 7px 4px 7px;
+			padding: expression("4px 5px 0px 5px"); /* for IE7 and earlier */
+			height: 16px;
+		}
+		#wsniceform .colone, #wsniceform .coltwo, #wsniceform .double
+		{
+			display: block;
+			float: left;
+		}
+		#wsniceform div.colone
+		{
+			width: 284px;
+		}
+		#wsniceform div.coltwo
+		{
+			width: 304px;
+			margin-left: 0px;
+		}
+		#wsniceform .colone strong, #wsniceform .coltwo strong
+		{
+			display: block;
+			padding-top: 10px;
+			padding-bottom: 14px;
+		}
+		#wsniceform .text.colone, #wsniceform .text.coltwo
+		{
+			width: 268px;
+			width: expression("272px"); /* for IE7 and earlier */
+		}
+		#wsniceform .coltwo, #wsniceform .coltwo strong
+		{
+			margin-left: 21px;
+		}
+		#wsniceform .double
+		{
+			width: 573px;
+			width: expression("577px"); /* for IE7 and earlier */
+		}
+		#wsniceform .select
+		{
+			padding: 3px 4px 3px 4px;
+			height: 28px;  /* IE will ignore */
+			width: 284px;
+		}
+		#wsniceform .radio
+		{
+			display: block;
+			float: left;
+			height: 28px;
+			margin: 3px 0px 7px 21px;
+		}
+		#wsniceform .checkbox
+		{
+			display: block;
+			float: left;
+			height: 28px;
+			margin: 3px 0px 7px 3px;
+			font-size: 14px;
+		}
+		#wsniceform .radio input, #wsniceform .checkbox input
+		{
+			display: inline-block;
+			margin-right: 7px;
+			margin-right: expression("3px");
+		}
+		#wsniceform a
+		{
+			text-decoration: underline;
+		}
+		#wsniceform #submitter
+		{
+			background-image: url(webassets/moz-join-order.png);
+			background-color: transparent;
+			width: 227px;
+			height: 68px;
+			border: 0px;
+			margin: 18px auto 26px auto;
+			display: block;
+			cursor: pointer;
+			font-size: 1px;  /* Hides button text in Firefox 3.0 */
+			font-size: 0px;  /* Hides button text in Firefox 3.5, Old Safari */
+			line-height: 200px;  /* Hides button text in IE, Safari, Chrome */
+			overflow: hidden;
+		}
+		#wssmallprint
+		{
+			font-size: 12px;
+			line-height: 15px;
+			padding-bottom: 20px;
+		}
+		.clearall
+		{
+			clear: both;
+		}
+		
+		/* Thank You page specific */
+		#wssharebox
+		{
+			margin: 0px;
+			padding: 0px;
+		}
+		#wssharebox textarea
+		{
+			background-color: transparent;
+			overflow: hidden;
+			border: 1px dashed #888;
+			margin: 20px 26px 4px 26px;
+			padding: 10px;
+			width: 510px;
+			height: 40px;
+			font-family: georgia, "times new roman", serif;
+			font-size: 16px;
+			color: #484848;
+			font-style: italic;
+		}
+		#wssharebox #smalltw, #wssharebox #smallfb
+		{
+			background-repeat: no-repeat;
+			background-position: top left;
+			font-family: arial, helvetica, sans-serif;
+			font-size: 11px;
+			color: #484848;
+			display: inline-block;
+			margin-bottom: 20px;
+		}
+		#wssharebox #smalltw:hover, #wssharebox #smallfb:hover
+		{
+			text-decoration: underline;
+		}
+		#wssharebox #smalltw
+		{
+			margin-left: 27px;
+			background-image: url(webassets/moz-join-smalltw.gif);
+			padding-left: 32px;
+		}
+		#wssharebox #smallfb
+		{
+			margin-left: 25px;
+			background-image: url(webassets/moz-join-smallfb.gif);
+			padding-left: 15px;
+		}
+		.shareicon
+		{
+			display: block;
+			float: left;
+			width: 131px;
+			height: 131px;
+			margin-right: 21px;
+			margin-bottom: 21px;
+			text-indent: -9999px;
+			cursor: pointer;
+		}
+		#sharefb
+		{
+			background-image: url(webassets/moz-join-fb.png);
+		}
+		#sharetw
+		{
+			background-image: url(webassets/moz-join-tw.png);
+		}
+		#sharegp
+		{
+			background-image: url(webassets/moz-join-gp.png);
+			display: expression("none");  /* Google+ doesn't support IE7 or less! */
+		}
+		#shareem
+		{
+			background-image: url(webassets/moz-join-em.png);
+			margin-right: 0px;
+		}
+		#sharemo
+		{
+			background-image: url(webassets/moz-join-moz.png);
+		}
+		#moreaboutmoz
+		{
+			display: block;
+			float: left;
+			width: 440px;
+			padding-top: 34px;
+		}
+		#moreaboutmoz a
+		{
+			color: #484848;
+			text-decoration: underline;
+		}
+		
+		/* For Google+ */
+		.wsform
+		{
+			position: relative;
+		}
+		.gpluscenter
+		{
+			position: absolute;
+			top: 212px;
+			left: 285px;
+		}
+		.gplusonebox
+		{
+			border: 10px solid #788cc7;
+			-moz-border-radius: 149px;
+			-webkit-border-radius: 149px;
+			border-radius: 149px;
+			width: 149px;
+			height: 149px;
+			background-color: #fff;
+		}
+		.gplusonebox .plusonetext
+		{
+			padding-top: 14px;
+			text-align: center;
+			font-family: arial, helvetica, sans-serif;
+			font-style: italic;
+			font-size: 14px;
+			color: #484848;
+		}
+		.gplusonebox .plusonetext a
+		{
+			display: inline-block;
+			text-decoration: none;
+			color: #484848;
+			border-bottom: 1px dashed #484848;
+		}
+		.gplusonebox .plusonetext big
+		{
+			color: #d4453e;
+		}
+		.gplusonebox .plusonewrapper
+		{
+			margin-bottom: 2px;
+		}
+		
+		/* All of these will only be relevant to users with js disabled: */
+		.wsform div.bsd-contribForm-oneCol
+		{
+			display: none;
+		}
+		.wsform form#contribution, .wsform form#contribution table, .wsform form#contribution td.contribcolumn, .wsform form#contribution .nested_table td
+		{
+			margin: 0px;
+			width: 100%;
+		}
+		.wsform form#contribution .contribcolumn, .wsform form#contribution .contribcolumn td
+		{
+			padding-top: 0px;
+		}
+		.wsform form#contribution .contribcolumn td
+		{
+			font-family: "LeagueGothicRegular", Impact, Charcoal, "Arial Narrow Bold", Arial, sans-serif;
+			font-size: 30px;
+			line-height: 30px;
+			color: #484848;
+			text-transform: uppercase;
+		}
+		.wsform form#contribution .contribcolumn td td
+		{
+			text-transform: none;
+		}
+		.wsform form#contribution label, .wsform form#contribution label span, .wsform form#contribution a
+		{
+			font-size: 16px;
+			font-family: georgia, "times new roman", serif;
+			color: #484848;
+		}
+		.wsform form#contribution td.contribbutton
+		{
+			padding-top: 10px;
+		}
+		.wsform .bsd-contribForm-belowContent
+		{
+			margin-left: 0px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			font-size: 11px;
+			font-style: italic;
+		}
+		
+	</style>
+</head>
+<body class="page-index"> 
+	<noscript>
+		<style>
+			body .wsform div.bsd-contribForm-oneCol
+			{
+				display: block;
+			}
+			.wsform #wsniceform
+			{
+				display: none;
+			}
+		</style>
+	</noscript>
+	<div id="wsact1" class="act"> 
+		<header id="header">
+			<h1><a href="http://mozilla.com/firefox">Mozilla Firefox</a></h1> 
+			<a href="http://www.mozilla.org/" class="mozilla">Mozilla</a> 
+			<nav id="nav-main" role="navigation">
+				<ul role="menubar">
+					<li id="nav-main-features" class="first"><a aria-haspopup="true" aria-owns="nav-main-features-submenu" tabindex="0" href="http://mozilla.com/firefox/features/">Desktop</a> 
+						<ul id="nav-main-features-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/firefox/features/">Features</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/security/">Security</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/performance/">Performance</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/customize/">Customization</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/technology/">Technology</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/video/">Videos</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/firefox/central/">Tour</a></li> 
+							<li class="last"><a tabindex="-1" href="http://mozilla.com/firefox/channel/">Future Releases</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-mobile"><a aria-haspopup="true" aria-owns="nav-main-mobile-submenu" tabindex="0" href="http://mozilla.com/mobile/">Mobile</a> 
+						<ul id="nav-main-mobile-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/mobile/">Mobile Overview</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/download/">Download</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/features/">Features</a></li><li><a tabindex="-1" href="https://addons.mozilla.org/mobile/?browse=featured">Customize</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/sync/">Sync</a></li> 
+							<li><a tabindex="-1" href="https://developer.mozilla.org/mobile">Develop</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/getinvolved/">Get Involved</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/mobile/faq/">FAQ</a></li> 
+							<li class="last"><a tabindex="-1" href="https://blog.mozilla.com/mobile/">Blog</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-addons"><a aria-haspopup="true" aria-owns="nav-main-addons-submenu" tabindex="0" href="https://addons.mozilla.org/">Add-ons</a> 
+						<ul id="nav-main-addons-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="https://addons.mozilla.org/firefox/">Firefox Add-ons</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/featured/">Featured Add-ons</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/extensions/">Extensions</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/themes/">Themes</a></li> 
+							<li><a tabindex="-1" href="http://www.getpersonas.com/">Personas</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/search-tools/">Search Tools</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/language-tools/">Language Support</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/firefox/collections/">Collections</a></li> 
+							<li><a tabindex="-1" href="https://addons.mozilla.org/mobile/">Mobile Add-ons</a></li> 
+							<li class="last"><a tabindex="-1" href="https://addons.mozilla.org/firefox/developers/">Developer Hub</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-support"><a aria-haspopup="true" aria-owns="nav-main-support-submenu" tabindex="0" href="http://support.mozilla.com/">Support</a> 
+						<ul id="nav-main-support-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://support.mozilla.com/kb/">Firefox Support</a></li> 
+							<li><a tabindex="-1" href="http://support.mozilla.com/mobile">Mobile Support</a></li> 
+							<li class="last"><a tabindex="-1" href="http://support.mozillamessaging.com/kb/">Thunderbird Support</a></li> 
+						</ul>
+					</li> 
+					<li id="nav-main-about" class="last"><a aria-haspopup="true" aria-owns="nav-main-about-submenu" tabindex="0" href="http://mozilla.com/about/">About</a> 
+						<ul id="nav-main-about-submenu" aria-expanded="false"><li class="first"><a tabindex="-1" href="http://mozilla.com/about/">About Firefox</a></li> 
+							<li><a tabindex="-1" href="http://www.mozilla.org/join">Join Mozilla</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/participate/">Participate</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/press/">Press Center</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/careers.html">Careers</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/partnerships.html">Partnerships</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/legal.html">Legal</a></li> 
+							<li><a tabindex="-1" href="http://mozilla.com/about/contact.html">Contact Us</a></li> 
+							<li class="last"><a tabindex="-1" href="http://blog.mozilla.com/">Blog</a></li> 
+						</ul>
+					</li> 
+				</ul>
+			</nav>
+		</header>
+		<div id="wsactwrap">
+			<div id="wsact">
+				
+				<h1>Thank you. Spread the word.</h1>
+				<div class="wsshirts">
+					 <strong>Thank you</strong> for your donation and your support for Mozilla. Your t-shirt is on the way, and you've supported a global non-profit that is building a better web.
+				</div>
+				<div class="in wsform">
+					<strong>Tell your friends &mdash; this is the <em>only</em> place on the Web where you can get the official, supporters-only Firefox t-shirt.</strong>
+					<br><br>
+					Cut and paste this sentence to your friends and family, or use the easy share buttons below:
+					<form id="wssharebox">
+						<textarea onclick="this.select();">I just ordered the official Firefox t-shirt - only place on the Web to get it http://mozilla.org/firefoxtshirt #mozilla #firefox</textarea>
+						<a href="http://twitter.com/intent/tweet?text=I%20just%20donated%20to%20%40Mozilla%20%26%20got%20the%20official%20%40Firefox%20t-shirt%20-%20the%20only%20way%20to%20get%20it%20online.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" id="smalltw">Tweet this</a>
+						<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A%2F%2Ffirefoxtshirt.mozilla.org&p[title]=GET%20THE%20SHIRT.%20JOIN%20MOZILLA.&p[images][0]=webassets%2Fmoz-join-fbshare.jpg&p[summary]=I%20just%20ordered%20the%20*official*%20Firefox%20t-shirt%2C%20available%20only%20to%20supporters.%20Order%20your%20own%20and%20join%20Mozilla%20here%20--%20the%20ONLY%20place%20on%20the%20Web%20to%20get%20the%20official%20Firefox%20t-shirt.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" id="smallfb">Share on Facebook</a>
+					</form>
+					<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A%2F%2Ffirefoxtshirt.mozilla.org&p[title]=GET%20THE%20SHIRT.%20JOIN%20MOZILLA.&p[images][0]=webassets%2Fmoz-join-fbshare.jpg&p[summary]=I%20just%20ordered%20the%20*official*%20Firefox%20t-shirt%2C%20available%20only%20to%20supporters.%20Order%20your%20own%20and%20join%20Mozilla%20here%20--%20the%20ONLY%20place%20on%20the%20Web%20to%20get%20the%20official%20Firefox%20t-shirt.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" class="shareicon" id="sharefb">Facebook</a>
+					<a href="http://twitter.com/intent/tweet?text=I%20just%20donated%20to%20%40Mozilla%20%26%20got%20the%20official%20%40Firefox%20t-shirt%20-%20the%20only%20way%20to%20get%20it%20online.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" class="shareicon" id="sharetw">Twitter</a>
+					<a onclick="document.getElementById('gplusshare').style.display = 'block';" target="_blank" class="shareicon" id="sharegp">Google+</a>
+					<a href="mailto:?subject=GET%20THE%20SHIRT.%20JOIN%20MOZILLA.&body=I%20just%20ordered%20the%20*official*%20Firefox%20t-shirt%2C%20available%20only%20to%20supporters.%20Order%20your%20own%20and%20join%20Mozilla%20here%20--%20the%20ONLY%20place%20on%20the%20Web%20to%20get%20the%20official%20Firefox%20t-shirt.%0D%0Ahttp%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" class="shareicon" id="shareem">Email</a>
+					<div class="clearall">
+					</div>
+					<a href="http://www.mozilla.org/about/" target="_blank" class="shareicon" id="sharemo">Learn About Mozilla</a>
+					<span id="moreaboutmoz">
+						<strong>There's more to Mozilla.</strong> Firefox, like other Mozilla projects, is built by a global community of supporters and volunteers. <a href="http://www.mozilla.org/about/" target="_blank"><strong>Learn more and get involved today.</strong></a>
+					</span>
+					
+					<div id="gplusshare" class="gpluscenter" style="display: none;">
+						<div class="gplusonebox">
+							<div class="plusonetext">
+								<div class="plusonewrapper">
+									<div id="plusone"></div>
+									<script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+										{"parsetags": "explicit"}
+									</script>
+									<script type="text/javascript">
+										gapi.plusone.render(document.getElementById("plusone"),
+										{
+											"size": "tall",
+											"count": "true",
+											"href": "http://firefoxtshirt.mozilla.org"
+										});
+									</script>
+								</div>
+								Click above to <big>+1</big>
+								<br>this on <a href="http://plus.google.com/" target="_blank">Google+</a>
+							</div>
+						</div>
+					</div>
+					
+				</div><!--/in-->
+				<div class="clearall">
+				</div>
+				
+			</div>
+		</div>
+	</div><!--/wsact1-->
+	<footer id="footer-wrap">
+		<div id="footer" class="clearfix"> 
+			<div id="footer-in"> 
+				<div class="six-col"> 
+					<a id="logo-footer" href="http://mozilla.org/"><img src="webassets/mozilla-logo-alt.png" alt="Mozilla" width="109" height="98"></a> 
+					<p id="copyright"> 
+						Portions of this content are ©1998–2011 by individual 
+						mozilla.org contributors. Content available under a Creative Commons <a href="http://mozilla.org/foundation/licensing/website-content.html">license</a>.
+					</p> 
+					<ul id="copyright-links">
+						<li><a href="http://mozilla.org/contact/" class="first">Contact Us</a></li> 
+						<li><a href="http://mozilla.org/about/policies/privacy-policy.html">Privacy Policy</a></li> 
+						<li><a href="http://www.mozilla.com/en-US/about/legal.html">Legal Notices</a></li> 
+						<li><a href="http://www.mozilla.com/en-US/legal/fraud-report/index.html">Report Trademark Abuse</a> </li> 
+					</ul>
+				</div> 
+				<div id="footer-navs"> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>About Us</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://mozilla.org/about/mission.html">Our Mission</a></li> 
+							<li><a href="http://mozilla.org/about/forums/">Forums</a></li> 
+							<li><a href="http://mozilla.org/about/governance.html">Governance</a></li> 
+							<li><a href="http://mozilla.org/about/organizations.html">Organizations</a></li> 
+							<li><a href="http://mozilla.org/grants/">Grants</a></li> 
+							<li><a href="http://mozilla.org/about/history.html">History</a></li> 
+							<li><a href="http://mozilla.org/about/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>Community Map</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://mozilla.org/community/index.html#applications">Applications</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#code">Code</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#incubators">Incubators</a></li> 
+							<li><a href="http://mozilla.org/community/index.html#community-sites">Community Sites</a></li> 
+							<li><a href="http://mozilla.org/community/directory.html">Directory</a></li> 
+							<li><a href="http://mozilla.org/community/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col"> 
+						<h5 class="footer-nav-title"><strong>Our Projects</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="http://www.firefox.com/">Firefox</a></li> 
+							<li><a href="http://www.getthunderbird.com/">Thunderbird</a></li> 
+							<li><a href="http://www.drumbeat.org/projects">Drumbeat</a></li> 
+							<li><a href="http://www.mozillalabs.com/projects">Mozilla Labs</a></li> 
+							<li><a href="http://mozilla.org/support">Support</a></li> 
+							<li><a href="https://addons.mozilla.org/">Add-ons</a></li> 
+							<li><a href="http://input.mozilla.com/">Feedback</a></li> 
+							<li><a href="http://mozilla.org/security/announce">Security Advisories</a></li> 
+							<li><a href="http://mozilla.org/projects/">More…</a></li> 
+						</ul>
+					</div> 
+					<div class="five-col last"> 
+						<h5 class="footer-nav-title"><strong>Get Involved</strong></h5> 
+						<ul class="footer-nav">
+							<li><a href="https://developer.mozilla.org/En/Developer_Guide">Developing</a></li> 
+							<li><a href="https://developer.mozilla.org/Project:en/How_to_Help">Documentation</a></li> 
+							<li><a href="https://donate.mozilla.org/page/contribute/openwebfund">Donate</a></li> 
+							<li><a href="https://wiki.mozilla.org/L10n">Localization</a></li> 
+							<li><a href="http://contribute.mozilla.org/Marketing">Marketing</a></li> 
+							<li><a href="http://quality.mozilla.org/">Testing</a></li> 
+							<li><a href="http://blog.mozilla.com/webdev/get-involved/">Webdev</a></li> 
+							<li><a href="http://mozilla.org/contribute">More…</a></li> 
+						</ul>
+					</div> 
+				</div> 
+			</div> 
+		</div><!--/footer--> 
+		<!-- START OF SmartSource Data Collector TAG -->
+		<!-- Copyright (c) 1996-2010 WebTrends Inc.  All rights reserved. -->
+		<!-- Version: 8.6.2 -->
+		<!-- Tag Builder Version: 3.0  -->
+		<!-- Created: 5/10/2010 6:56:34 PM -->
+		<script src="webassets/webtrends.js" type="text/javascript"></script>
+		<!-- Warning: The two script blocks below must remain inline. Moving them to an
+		external -->
+		<!-- JavaScript include file can cause serious problems with cross-domain
+		tracking.      -->
+		<script type="text/javascript">
+			//<![CDATA[
+			var _tag=new WebTrends();
+			_tag.dcsGetId();
+			//]]>>
+		</script>
+		<script type="text/javascript">
+			//<![CDATA[
+			// Add custom parameters here.
+			//_tag.DCSext.param_name=param_value;
+			_tag.dcsCollect();
+			//]]>>
+		</script>
+		<noscript>
+			<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="https://statse.webtrendslive.com/dcsis0ifv10000gg3ag82u4rf_7b1e/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"></div>
+		</noscript>
+		<!-- END OF SmartSource Data Collector TAG -->
+	</footer>
+
+</body>
+</html>

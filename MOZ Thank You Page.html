@@ -14,7 +14,7 @@
 	<!--[if IE]><![endif]-->
 	<!-- Chrome Frame for browsers that support it -->
 	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<meta name="viewport" content="width=980">
+	<meta name="viewport" content="width=1000">
 	<meta name="WT.si_n" content="Join Mozilla English Signup">
 	<meta name="WT.si_x" content="1">
 	<link rel="shortcut icon" type="image/ico" href="https://donate.mozilla.org/page/smartproxy/BSD_CApMXA8IBxoKQVc/AwRAXAALCBoMUF8">
@@ -36,7 +36,7 @@
 		}
 		body
 		{
-			min-width: 980px;  /* otherwise gray top-border won't be present when user scrolls right if window is too narrow */
+			min-width: 1000px;  /* otherwise gray top-border won't be present when user scrolls right if window is too narrow */
 			background-image: url(webassets/moz-join-repeatingbg.gif);
 		}
 		body #header
@@ -91,119 +91,15 @@
 			width: 594px;
 			z-index: 0;
 		}
-		#wsniceform #wsamount
-		{
-			padding-bottom: 16px;
-		}
-		#wsniceform .text, #wsniceform .select
-		{
-			background-color: #f5fafe;
-			border-color: #c3d5e3;
-			height: auto;  /* for IE */
-			border: expression("1px solid ActiveCaption"); /* for IE7 and earlier */
-			margin: 0px 0px 10px 0px;
-		}
-		#wsniceform .text
-		{
-			padding: 4px 7px 4px 7px;
-			padding: expression("4px 5px 0px 5px"); /* for IE7 and earlier */
-			height: 16px;
-		}
-		#wsniceform .colone, #wsniceform .coltwo, #wsniceform .double
-		{
-			display: block;
-			float: left;
-		}
-		#wsniceform div.colone
-		{
-			width: 284px;
-		}
-		#wsniceform div.coltwo
-		{
-			width: 304px;
-			margin-left: 0px;
-		}
-		#wsniceform .colone strong, #wsniceform .coltwo strong
-		{
-			display: block;
-			padding-top: 10px;
-			padding-bottom: 14px;
-		}
-		#wsniceform .text.colone, #wsniceform .text.coltwo
-		{
-			width: 268px;
-			width: expression("272px"); /* for IE7 and earlier */
-		}
-		#wsniceform .coltwo, #wsniceform .coltwo strong
-		{
-			margin-left: 21px;
-		}
-		#wsniceform .double
-		{
-			width: 573px;
-			width: expression("577px"); /* for IE7 and earlier */
-		}
-		#wsniceform .select
-		{
-			padding: 3px 4px 3px 4px;
-			height: 28px;  /* IE will ignore */
-			width: 284px;
-		}
-		#wsniceform .radio
-		{
-			display: block;
-			float: left;
-			height: 28px;
-			margin: 3px 0px 7px 21px;
-		}
-		#wsniceform .checkbox
-		{
-			display: block;
-			float: left;
-			height: 28px;
-			margin: 3px 0px 7px 3px;
-			font-size: 14px;
-		}
-		#wsniceform .radio input, #wsniceform .checkbox input
-		{
-			display: inline-block;
-			margin-right: 7px;
-			margin-right: expression("3px");
-		}
-		#wsniceform a
-		{
-			text-decoration: underline;
-		}
-		#wsniceform #submitter
-		{
-			background-image: url(webassets/moz-join-order.png);
-			background-color: transparent;
-			width: 227px;
-			height: 68px;
-			border: 0px;
-			margin: 18px auto 26px auto;
-			display: block;
-			cursor: pointer;
-			font-size: 1px;  /* Hides button text in Firefox 3.0 */
-			font-size: 0px;  /* Hides button text in Firefox 3.5, Old Safari */
-			line-height: 200px;  /* Hides button text in IE, Safari, Chrome */
-			overflow: hidden;
-		}
-		#wssmallprint
-		{
-			font-size: 12px;
-			line-height: 15px;
-			padding-bottom: 20px;
-		}
 		.clearall
 		{
 			clear: both;
 		}
 		
-		/* Thank You page specific */
+		/* Thank You page */
 		#wssharebox
 		{
-			margin: 0px;
+			margin: 0px 0px 18px 0px;
 			padding: 0px;
 		}
 		#wssharebox textarea
@@ -219,32 +115,6 @@
 			font-size: 16px;
 			color: #484848;
 			font-style: italic;
-		}
-		#wssharebox #smalltw, #wssharebox #smallfb
-		{
-			background-repeat: no-repeat;
-			background-position: top left;
-			font-family: arial, helvetica, sans-serif;
-			font-size: 11px;
-			color: #484848;
-			display: inline-block;
-			margin-bottom: 20px;
-		}
-		#wssharebox #smalltw:hover, #wssharebox #smallfb:hover
-		{
-			text-decoration: underline;
-		}
-		#wssharebox #smalltw
-		{
-			margin-left: 27px;
-			background-image: url(webassets/moz-join-smalltw.gif);
-			padding-left: 32px;
-		}
-		#wssharebox #smallfb
-		{
-			margin-left: 25px;
-			background-image: url(webassets/moz-join-smallfb.gif);
-			padding-left: 15px;
 		}
 		.shareicon
 		{
@@ -473,8 +343,6 @@
 					Cut and paste this sentence to your friends and family, or use the easy share buttons below:
 					<form id="wssharebox">
 						<textarea onclick="this.select();">I just donated to @Mozilla & got the official @Firefox t-shirt - the only way to get it online. http://firefoxtshirt.mozilla.org</textarea>
-						<a href="http://twitter.com/intent/tweet?text=I%20just%20donated%20to%20%40Mozilla%20%26%20got%20the%20official%20%40Firefox%20t-shirt%20-%20the%20only%20way%20to%20get%20it%20online.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" id="smalltw">Tweet this</a>
-						<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A%2F%2Ffirefoxtshirt.mozilla.org&p[title]=GET%20THE%20SHIRT.%20JOIN%20MOZILLA.&p[images][0]=webassets%2Fmoz-join-fbshare.jpg&p[summary]=I%20just%20ordered%20the%20*official*%20Firefox%20t-shirt%2C%20available%20only%20to%20supporters.%20Order%20your%20own%20and%20join%20Mozilla%20here%20--%20the%20ONLY%20place%20on%20the%20Web%20to%20get%20the%20official%20Firefox%20t-shirt.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" id="smallfb">Share on Facebook</a>
 					</form>
 					<a href="http://www.facebook.com/sharer.php?s=100&p[url]=http%3A%2F%2Ffirefoxtshirt.mozilla.org&p[title]=GET%20THE%20SHIRT.%20JOIN%20MOZILLA.&p[images][0]=webassets%2Fmoz-join-fbshare.jpg&p[summary]=I%20just%20ordered%20the%20*official*%20Firefox%20t-shirt%2C%20available%20only%20to%20supporters.%20Order%20your%20own%20and%20join%20Mozilla%20here%20--%20the%20ONLY%20place%20on%20the%20Web%20to%20get%20the%20official%20Firefox%20t-shirt.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" class="shareicon" id="sharefb">Facebook</a>
 					<a href="http://twitter.com/intent/tweet?text=I%20just%20donated%20to%20%40Mozilla%20%26%20got%20the%20official%20%40Firefox%20t-shirt%20-%20the%20only%20way%20to%20get%20it%20online.%20http%3A%2F%2Ffirefoxtshirt.mozilla.org" target="_blank" class="shareicon" id="sharetw">Twitter</a>
